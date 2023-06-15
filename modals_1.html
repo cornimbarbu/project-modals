@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modals_1</title>
+    <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="global-header">
+      <div class="container">
+        <div class="continut-header">Aceasta este partea de Header</div>
+      </div>
+    </header>
+    <main class="global-main">
+      <div class="container">
+        <section class="sectiunea-1">
+          Aici este vorba de o sectiune din body
+        </section>
+
+        <button data-modal-open1>Open Modal 1</button>
+      </div>
+    </main>
+    <footer class="nu-vrea">
+      <div class="container">
+        <section class="continut-footer">Aceasta este partea de footer</section>
+      </div>
+    </footer>
+
+    <!--Modals-->
+
+    <!--Modal_1-->
+
+    <div data-modal1 class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close1 class="close-btn1">
+          <svg>
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <div>
+          <p class="form-heading1">Place Your Order</p>
+          <p class="form-sub-heading">Select Products</p>
+        </div>
+        <div class="select-products">
+          <ul class="products">
+            <li class="products-item">
+              <img src="./images/ice-cream.png" alt="Icecream" />
+              <label class="select-qty">
+                <input
+                  class="input"
+                  id="qty"
+                  name="qty"
+                  type="number"
+                  placeholder="QTY"
+                />
+              </label>
+            </li>
+            <li class="products-item">
+              <img src="./images/ice-coffe.png" alt="Coffe" />
+              <label class="select-qty">
+                <input
+                  class="input"
+                  id="qty"
+                  name="qty"
+                  type="number"
+                  placeholder="QTY"
+                />
+              </label>
+            </li>
+            <li class="products-item">
+              <img src="./images/milkshakes.png" alt="Milkshakes" />
+              <label class="select-qty">
+                <input
+                  class="input"
+                  id="qty"
+                  name="qty"
+                  type="number"
+                  placeholder="QTY"
+                />
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <!--Form-->
+
+        <form class="form">
+          <div class="form-sub-heading">Delivery Adress</div>
+          <label class="form-group">
+            <span>Name</span>
+            <input class="input" id="name" name="name" type="text" />
+            <svg class="form-svg">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </label>
+
+          <label class="form-group">
+            <span>Telephone</span>
+            <input class="input" id="phone" name="phone" type="tel" />
+            <svg class="form-svg">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </label>
+
+          <label class="form-group">
+            <span>E-mail</span>
+            <input class="input" id="mail" name="mail" type="email" />
+            <svg class="form-svg">
+              <use href="./images/icons.svg#mail-envelope"></use>
+            </svg>
+          </label>
+
+          <label class="form-group">
+            <span>Delivery Adress</span>
+            <input class="input" id="mail" name="mail" type="email" />
+            <svg class="form-svg">
+              <use href="./images/icons.svg#home"></use>
+            </svg>
+          </label>
+
+          <div class="form-controls">
+            <button type="submit" class="btn-submit">Place Order</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

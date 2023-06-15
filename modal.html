@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modals_1</title>
+    <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="global-header">
+      <div class="container">
+        <div class="continut-header">Aceasta este partea de Header</div>
+      </div>
+    </header>
+    <main class="global-main">
+      <div class="container">
+        <section class="sectiunea-1">
+          Aici este vorba de o sectiune din body
+        </section>
+
+        <button data-modal-open>Open Modal 1</button>
+      </div>
+    </main>
+    <footer class="nu-vrea">
+      <div class="container">
+        <section class="continut-footer">Aceasta este partea de footer</section>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!--Modal-->
+
+<div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button data-modal-close1 class="close-btn1">
+      <svg>
+        <use href="./images/icons.svg#close-black"></use>
+      </svg>
+    </button>
+  </div>
+</div>
